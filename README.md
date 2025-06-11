@@ -2,6 +2,14 @@
 
 Convert Claude Code JSONL session files to readable markdown transcripts with the exact same output as the physical-sessions command.
 
+## Quick start
+
+```bash
+uv tool install claude-transcript
+cd ~/.claude/projects/your-project-path
+claude-transcript {session-id}.jsonl --upload-gist
+```
+
 ## Installation
 
 ### Install as a tool (recommended)
