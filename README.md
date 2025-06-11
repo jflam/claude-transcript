@@ -1,6 +1,6 @@
 # Claude Transcript
 
-Convert Claude Code JSONL session files to readable markdown transcripts with the exact same output as the physical-sessions command.
+Convert Claude Code JSONL session files to readable markdown transcripts and share them with your friends. 
 
 ## Quick start
 
