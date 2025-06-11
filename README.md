@@ -34,6 +34,25 @@ claude-transcript session.jsonl --upload-gist
 claude-transcript --help
 ```
 
+## Claude Code JSONL Files
+
+Claude Code automatically saves all conversations locally in JSONL (JSON Lines) format. Each session creates a file containing structured data about your interaction:
+
+- **Storage Location**: Conversations are stored locally on your machine with full message history
+- **File Format**: JSONL files contain one JSON object per line, capturing messages, tool operations, metadata, and timing information
+- **Content Types**: Files include user messages, assistant responses, tool executions (file edits, searches, bash commands), sidechains for parallel processing, and session metadata
+- **Data Retention**: While local files persist indefinitely, Anthropic only retains user feedback transcripts for 30 days for debugging and improvement purposes
+
+### JSONL Structure
+
+Each line in a Claude Code JSONL file represents a different type of event or operation:
+- Message exchanges between user and assistant
+- Tool operations and their results
+- Timing and cost information
+- Parallel task execution data from sidechains
+
+This structured format allows for comprehensive reconstruction of the entire conversation flow, which this tool converts into readable markdown transcripts.
+
 ## Features
 
 - **Zero dependencies**: Pure Python with no external dependencies
