@@ -3,7 +3,7 @@
 # requires-python = ">=3.8"
 # dependencies = []
 # description = "Convert Claude Code JSONL sessions to readable markdown transcripts"
-# authors = ["John Lam"]
+# authors = ["Claude Code Community"]
 # license = "MIT"
 # ///
 """
@@ -728,5 +728,10 @@ Examples:
         return 1
 
 
-if __name__ == '__main__':
+def cli():
+    """Entry point for the CLI."""
     sys.exit(main())
+
+
+if __name__ == '__main__':
+    cli()

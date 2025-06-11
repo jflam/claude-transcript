@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-transcript"
+version = "1.0.0"
+description = "Convert Claude Code JSONL sessions to readable markdown transcripts"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "John Lam", email = "jlam@iunknown.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/anthropics/claude-transcript"
+Repository = "https://github.com/anthropics/claude-transcript"
+Issues = "https://github.com/anthropics/claude-transcript/issues"
+
+[project.scripts]
+claude-transcript = "claude_transcript.main:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[dependency-groups]
+dev = [
+    "twine>=6.1.0",
+]

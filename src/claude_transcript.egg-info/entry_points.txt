@@ -1,0 +1,2 @@
+[console_scripts]
+claude-transcript = claude_transcript.main:cli
